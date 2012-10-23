@@ -7,27 +7,156 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		309309AA16364D8400328848 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 309309A916364D8400328848 /* main.cpp */; };
-		309309AC16364D8400328848 /* Portal_Effect.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 309309AB16364D8400328848 /* Portal_Effect.1 */; };
+		309309AC16364D8400328848 /* Portal_Effect.1 in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309AB16364D8400328848 /* Portal_Effect.1 */; };
+		309309B316364DA800328848 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 309309B216364DA800328848 /* main.cpp */; };
+		309309E816364E7100328848 /* gl_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 309309DA16364E7100328848 /* gl_helper.cpp */; };
+		309309EA16364E7100328848 /* image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 309309DE16364E7100328848 /* image.cpp */; };
+		309309EB16364E7100328848 /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 309309E016364E7100328848 /* matrix.cpp */; };
+		309309EC16364E7100328848 /* mdebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 309309E216364E7100328848 /* mdebug.cpp */; };
+		309309EE16364E7100328848 /* vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 309309E616364E7100328848 /* vector.cpp */; };
+		309309F2163651E000328848 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309309F1163651E000328848 /* GLUT.framework */; };
+		309309F4163651F300328848 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309309F3163651F300328848 /* OpenGL.framework */; };
+		309309F71636554200328848 /* tile.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309D816364DD400328848 /* tile.bmp */; };
+		309309F81636565C00328848 /* ring1.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309B616364DD400328848 /* ring1.bmp */; };
+		309309F91636565C00328848 /* ring10.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309B716364DD400328848 /* ring10.bmp */; };
+		309309FA1636565C00328848 /* ring10a.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309B816364DD400328848 /* ring10a.bmp */; };
+		309309FB1636565C00328848 /* ring11.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309B916364DD400328848 /* ring11.bmp */; };
+		309309FC1636565C00328848 /* ring11a.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309BA16364DD400328848 /* ring11a.bmp */; };
+		309309FD1636565C00328848 /* ring12.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309BB16364DD400328848 /* ring12.bmp */; };
+		309309FE1636565C00328848 /* ring12a.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309BC16364DD400328848 /* ring12a.bmp */; };
+		309309FF1636565C00328848 /* ring13.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309BD16364DD400328848 /* ring13.bmp */; };
+		30930A001636565C00328848 /* ring13a.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309BE16364DD400328848 /* ring13a.bmp */; };
+		30930A011636565C00328848 /* ring14.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309BF16364DD400328848 /* ring14.bmp */; };
+		30930A021636565C00328848 /* ring14a.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309C016364DD400328848 /* ring14a.bmp */; };
+		30930A031636565C00328848 /* ring15.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309C116364DD400328848 /* ring15.bmp */; };
+		30930A041636565C00328848 /* ring15a.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309C216364DD400328848 /* ring15a.bmp */; };
+		30930A051636565C00328848 /* ring16.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309C316364DD400328848 /* ring16.bmp */; };
+		30930A061636565C00328848 /* ring16a.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309C416364DD400328848 /* ring16a.bmp */; };
+		30930A071636565C00328848 /* ring17.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309C516364DD400328848 /* ring17.bmp */; };
+		30930A081636565C00328848 /* ring17a.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309C616364DD400328848 /* ring17a.bmp */; };
+		30930A091636565C00328848 /* ring1a.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309C716364DD400328848 /* ring1a.bmp */; };
+		30930A0A1636565C00328848 /* ring2.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309C816364DD400328848 /* ring2.bmp */; };
+		30930A0B1636565C00328848 /* ring2a.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309C916364DD400328848 /* ring2a.bmp */; };
+		30930A0C1636565C00328848 /* ring3.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309CA16364DD400328848 /* ring3.bmp */; };
+		30930A0D1636565C00328848 /* ring3a.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309CB16364DD400328848 /* ring3a.bmp */; };
+		30930A0E1636565C00328848 /* ring4.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309CC16364DD400328848 /* ring4.bmp */; };
+		30930A0F1636565C00328848 /* ring4a.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309CD16364DD400328848 /* ring4a.bmp */; };
+		30930A101636565C00328848 /* ring5.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309CE16364DD400328848 /* ring5.bmp */; };
+		30930A111636565C00328848 /* ring5a.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309CF16364DD400328848 /* ring5a.bmp */; };
+		30930A121636565C00328848 /* ring6.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309D016364DD400328848 /* ring6.bmp */; };
+		30930A131636565C00328848 /* ring6a.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309D116364DD400328848 /* ring6a.bmp */; };
+		30930A141636565C00328848 /* ring7.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309D216364DD400328848 /* ring7.bmp */; };
+		30930A151636565C00328848 /* ring7a.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309D316364DD400328848 /* ring7a.bmp */; };
+		30930A161636565C00328848 /* ring8.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309D416364DD400328848 /* ring8.bmp */; };
+		30930A171636565C00328848 /* ring8a.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309D516364DD400328848 /* ring8a.bmp */; };
+		30930A181636565C00328848 /* ring9.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309D616364DD400328848 /* ring9.bmp */; };
+		30930A191636565C00328848 /* ring9a.bmp in Copy Files */ = {isa = PBXBuildFile; fileRef = 309309D716364DD400328848 /* ring9a.bmp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		309309A316364D8400328848 /* CopyFiles */ = {
+		309309A316364D8400328848 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = textures;
+			dstSubfolderSpec = 16;
 			files = (
-				309309AC16364D8400328848 /* Portal_Effect.1 in CopyFiles */,
+				309309F81636565C00328848 /* ring1.bmp in Copy Files */,
+				309309F91636565C00328848 /* ring10.bmp in Copy Files */,
+				309309FA1636565C00328848 /* ring10a.bmp in Copy Files */,
+				309309FB1636565C00328848 /* ring11.bmp in Copy Files */,
+				309309FC1636565C00328848 /* ring11a.bmp in Copy Files */,
+				309309FD1636565C00328848 /* ring12.bmp in Copy Files */,
+				309309FE1636565C00328848 /* ring12a.bmp in Copy Files */,
+				309309FF1636565C00328848 /* ring13.bmp in Copy Files */,
+				30930A001636565C00328848 /* ring13a.bmp in Copy Files */,
+				30930A011636565C00328848 /* ring14.bmp in Copy Files */,
+				30930A021636565C00328848 /* ring14a.bmp in Copy Files */,
+				30930A031636565C00328848 /* ring15.bmp in Copy Files */,
+				30930A041636565C00328848 /* ring15a.bmp in Copy Files */,
+				30930A051636565C00328848 /* ring16.bmp in Copy Files */,
+				30930A061636565C00328848 /* ring16a.bmp in Copy Files */,
+				30930A071636565C00328848 /* ring17.bmp in Copy Files */,
+				30930A081636565C00328848 /* ring17a.bmp in Copy Files */,
+				30930A091636565C00328848 /* ring1a.bmp in Copy Files */,
+				30930A0A1636565C00328848 /* ring2.bmp in Copy Files */,
+				30930A0B1636565C00328848 /* ring2a.bmp in Copy Files */,
+				30930A0C1636565C00328848 /* ring3.bmp in Copy Files */,
+				30930A0D1636565C00328848 /* ring3a.bmp in Copy Files */,
+				30930A0E1636565C00328848 /* ring4.bmp in Copy Files */,
+				30930A0F1636565C00328848 /* ring4a.bmp in Copy Files */,
+				30930A101636565C00328848 /* ring5.bmp in Copy Files */,
+				30930A111636565C00328848 /* ring5a.bmp in Copy Files */,
+				30930A121636565C00328848 /* ring6.bmp in Copy Files */,
+				30930A131636565C00328848 /* ring6a.bmp in Copy Files */,
+				30930A141636565C00328848 /* ring7.bmp in Copy Files */,
+				30930A151636565C00328848 /* ring7a.bmp in Copy Files */,
+				30930A161636565C00328848 /* ring8.bmp in Copy Files */,
+				30930A171636565C00328848 /* ring8a.bmp in Copy Files */,
+				30930A181636565C00328848 /* ring9.bmp in Copy Files */,
+				30930A191636565C00328848 /* ring9a.bmp in Copy Files */,
+				309309F71636554200328848 /* tile.bmp in Copy Files */,
+				309309AC16364D8400328848 /* Portal_Effect.1 in Copy Files */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		309309A516364D8400328848 /* Portal Effect */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Portal Effect"; sourceTree = BUILT_PRODUCTS_DIR; };
-		309309A916364D8400328848 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		309309AB16364D8400328848 /* Portal_Effect.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Portal_Effect.1; sourceTree = "<group>"; };
+		309309B216364DA800328848 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		309309B616364DD400328848 /* ring1.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring1.bmp; sourceTree = "<group>"; };
+		309309B716364DD400328848 /* ring10.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring10.bmp; sourceTree = "<group>"; };
+		309309B816364DD400328848 /* ring10a.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring10a.bmp; sourceTree = "<group>"; };
+		309309B916364DD400328848 /* ring11.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring11.bmp; sourceTree = "<group>"; };
+		309309BA16364DD400328848 /* ring11a.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring11a.bmp; sourceTree = "<group>"; };
+		309309BB16364DD400328848 /* ring12.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring12.bmp; sourceTree = "<group>"; };
+		309309BC16364DD400328848 /* ring12a.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring12a.bmp; sourceTree = "<group>"; };
+		309309BD16364DD400328848 /* ring13.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring13.bmp; sourceTree = "<group>"; };
+		309309BE16364DD400328848 /* ring13a.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring13a.bmp; sourceTree = "<group>"; };
+		309309BF16364DD400328848 /* ring14.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring14.bmp; sourceTree = "<group>"; };
+		309309C016364DD400328848 /* ring14a.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring14a.bmp; sourceTree = "<group>"; };
+		309309C116364DD400328848 /* ring15.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring15.bmp; sourceTree = "<group>"; };
+		309309C216364DD400328848 /* ring15a.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring15a.bmp; sourceTree = "<group>"; };
+		309309C316364DD400328848 /* ring16.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring16.bmp; sourceTree = "<group>"; };
+		309309C416364DD400328848 /* ring16a.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring16a.bmp; sourceTree = "<group>"; };
+		309309C516364DD400328848 /* ring17.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring17.bmp; sourceTree = "<group>"; };
+		309309C616364DD400328848 /* ring17a.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring17a.bmp; sourceTree = "<group>"; };
+		309309C716364DD400328848 /* ring1a.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring1a.bmp; sourceTree = "<group>"; };
+		309309C816364DD400328848 /* ring2.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring2.bmp; sourceTree = "<group>"; };
+		309309C916364DD400328848 /* ring2a.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring2a.bmp; sourceTree = "<group>"; };
+		309309CA16364DD400328848 /* ring3.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring3.bmp; sourceTree = "<group>"; };
+		309309CB16364DD400328848 /* ring3a.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring3a.bmp; sourceTree = "<group>"; };
+		309309CC16364DD400328848 /* ring4.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring4.bmp; sourceTree = "<group>"; };
+		309309CD16364DD400328848 /* ring4a.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring4a.bmp; sourceTree = "<group>"; };
+		309309CE16364DD400328848 /* ring5.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring5.bmp; sourceTree = "<group>"; };
+		309309CF16364DD400328848 /* ring5a.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring5a.bmp; sourceTree = "<group>"; };
+		309309D016364DD400328848 /* ring6.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring6.bmp; sourceTree = "<group>"; };
+		309309D116364DD400328848 /* ring6a.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring6a.bmp; sourceTree = "<group>"; };
+		309309D216364DD400328848 /* ring7.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring7.bmp; sourceTree = "<group>"; };
+		309309D316364DD400328848 /* ring7a.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring7a.bmp; sourceTree = "<group>"; };
+		309309D416364DD400328848 /* ring8.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring8.bmp; sourceTree = "<group>"; };
+		309309D516364DD400328848 /* ring8a.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring8a.bmp; sourceTree = "<group>"; };
+		309309D616364DD400328848 /* ring9.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring9.bmp; sourceTree = "<group>"; };
+		309309D716364DD400328848 /* ring9a.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = ring9a.bmp; sourceTree = "<group>"; };
+		309309D816364DD400328848 /* tile.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = tile.bmp; sourceTree = "<group>"; };
+		309309D916364E7100328848 /* common_defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common_defs.h; sourceTree = "<group>"; };
+		309309DA16364E7100328848 /* gl_helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gl_helper.cpp; sourceTree = "<group>"; };
+		309309DB16364E7100328848 /* gl_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gl_helper.h; sourceTree = "<group>"; };
+		309309DE16364E7100328848 /* image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = image.cpp; sourceTree = "<group>"; };
+		309309DF16364E7100328848 /* image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image.h; sourceTree = "<group>"; };
+		309309E016364E7100328848 /* matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matrix.cpp; sourceTree = "<group>"; };
+		309309E116364E7100328848 /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
+		309309E216364E7100328848 /* mdebug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mdebug.cpp; sourceTree = "<group>"; };
+		309309E316364E7100328848 /* mdebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdebug.h; sourceTree = "<group>"; };
+		309309E616364E7100328848 /* vector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vector.cpp; sourceTree = "<group>"; };
+		309309E716364E7100328848 /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector.h; sourceTree = "<group>"; };
+		309309EF1636517E00328848 /* matrix.cci */ = {isa = PBXFileReference; lastKnownFileType = text; path = matrix.cci; sourceTree = "<group>"; };
+		309309F01636517E00328848 /* vector.cci */ = {isa = PBXFileReference; lastKnownFileType = text; path = vector.cci; sourceTree = "<group>"; };
+		309309F1163651E000328848 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		309309F3163651F300328848 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		309309F51636520600328848 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +164,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309309F4163651F300328848 /* OpenGL.framework in Frameworks */,
+				309309F2163651E000328848 /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +175,9 @@
 		3093099A16364D8400328848 = {
 			isa = PBXGroup;
 			children = (
+				309309F51636520600328848 /* GLKit.framework */,
+				309309F3163651F300328848 /* OpenGL.framework */,
+				309309F1163651E000328848 /* GLUT.framework */,
 				309309A816364D8400328848 /* Portal Effect */,
 				309309A616364D8400328848 /* Products */,
 			);
@@ -60,10 +194,74 @@
 		309309A816364D8400328848 /* Portal Effect */ = {
 			isa = PBXGroup;
 			children = (
-				309309A916364D8400328848 /* main.cpp */,
+				309309EF1636517E00328848 /* matrix.cci */,
+				309309F01636517E00328848 /* vector.cci */,
+				309309D916364E7100328848 /* common_defs.h */,
+				309309DA16364E7100328848 /* gl_helper.cpp */,
+				309309DB16364E7100328848 /* gl_helper.h */,
+				309309DE16364E7100328848 /* image.cpp */,
+				309309DF16364E7100328848 /* image.h */,
+				309309E016364E7100328848 /* matrix.cpp */,
+				309309E116364E7100328848 /* matrix.h */,
+				309309E216364E7100328848 /* mdebug.cpp */,
+				309309E316364E7100328848 /* mdebug.h */,
+				309309E616364E7100328848 /* vector.cpp */,
+				309309E716364E7100328848 /* vector.h */,
+				309309B216364DA800328848 /* main.cpp */,
 				309309AB16364D8400328848 /* Portal_Effect.1 */,
+				309309B416364DD400328848 /* textures */,
 			);
 			path = "Portal Effect";
+			sourceTree = "<group>";
+		};
+		309309B416364DD400328848 /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				309309B516364DD400328848 /* ring */,
+				309309D816364DD400328848 /* tile.bmp */,
+			);
+			path = textures;
+			sourceTree = "<group>";
+		};
+		309309B516364DD400328848 /* ring */ = {
+			isa = PBXGroup;
+			children = (
+				309309B616364DD400328848 /* ring1.bmp */,
+				309309B716364DD400328848 /* ring10.bmp */,
+				309309B816364DD400328848 /* ring10a.bmp */,
+				309309B916364DD400328848 /* ring11.bmp */,
+				309309BA16364DD400328848 /* ring11a.bmp */,
+				309309BB16364DD400328848 /* ring12.bmp */,
+				309309BC16364DD400328848 /* ring12a.bmp */,
+				309309BD16364DD400328848 /* ring13.bmp */,
+				309309BE16364DD400328848 /* ring13a.bmp */,
+				309309BF16364DD400328848 /* ring14.bmp */,
+				309309C016364DD400328848 /* ring14a.bmp */,
+				309309C116364DD400328848 /* ring15.bmp */,
+				309309C216364DD400328848 /* ring15a.bmp */,
+				309309C316364DD400328848 /* ring16.bmp */,
+				309309C416364DD400328848 /* ring16a.bmp */,
+				309309C516364DD400328848 /* ring17.bmp */,
+				309309C616364DD400328848 /* ring17a.bmp */,
+				309309C716364DD400328848 /* ring1a.bmp */,
+				309309C816364DD400328848 /* ring2.bmp */,
+				309309C916364DD400328848 /* ring2a.bmp */,
+				309309CA16364DD400328848 /* ring3.bmp */,
+				309309CB16364DD400328848 /* ring3a.bmp */,
+				309309CC16364DD400328848 /* ring4.bmp */,
+				309309CD16364DD400328848 /* ring4a.bmp */,
+				309309CE16364DD400328848 /* ring5.bmp */,
+				309309CF16364DD400328848 /* ring5a.bmp */,
+				309309D016364DD400328848 /* ring6.bmp */,
+				309309D116364DD400328848 /* ring6a.bmp */,
+				309309D216364DD400328848 /* ring7.bmp */,
+				309309D316364DD400328848 /* ring7a.bmp */,
+				309309D416364DD400328848 /* ring8.bmp */,
+				309309D516364DD400328848 /* ring8a.bmp */,
+				309309D616364DD400328848 /* ring9.bmp */,
+				309309D716364DD400328848 /* ring9a.bmp */,
+			);
+			path = ring;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -75,7 +273,7 @@
 			buildPhases = (
 				309309A116364D8400328848 /* Sources */,
 				309309A216364D8400328848 /* Frameworks */,
-				309309A316364D8400328848 /* CopyFiles */,
+				309309A316364D8400328848 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -117,7 +315,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				309309AA16364D8400328848 /* main.cpp in Sources */,
+				309309B316364DA800328848 /* main.cpp in Sources */,
+				309309E816364E7100328848 /* gl_helper.cpp in Sources */,
+				309309EA16364E7100328848 /* image.cpp in Sources */,
+				309309EB16364E7100328848 /* matrix.cpp in Sources */,
+				309309EC16364E7100328848 /* mdebug.cpp in Sources */,
+				309309EE16364E7100328848 /* vector.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
